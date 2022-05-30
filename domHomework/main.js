@@ -20,7 +20,8 @@
 //7
 // function getNameByUser(){
 //     var namee=prompt("enter name");
-//     document.write("<h2>"+namee+"</h2>")
+// var h2=document.getElementById("h22");
+//     h2.innerText=namee;
 // }
 // getNameByUser();
 //8
@@ -62,10 +63,7 @@
 // inputFunc();
 //11
 
-// function changeClass(){
-
-// var nameClasss=prompt("enter class name");
-// var classTextt=prompt("enter class text");
+// function changeClass(nameClasss,classTextt){
 
 // var dogma=document.getElementsByClassName(nameClasss);
 // for(i=0;i<dogma.length;i++){
@@ -74,34 +72,138 @@
 // }
 // }
 
-// changeClass();
+// changeClass("third","bbbbbbbbbbbb");
 
 //12
 // function addSpan(x){
 
-// var elements=document.getElementsByClassName(x);
+// var elements=document.getElementsByTagName(x);
 // for(i=0;i<elements.length;i++){
 //  var spans=document.createElement('span');
 
 // elements[i].append(spans);
 // }
 // }
-// addSpan('ppp');
+// addSpan('p');
 
 //13
 
-function personDetails(name,lname,age){
-if(name<18){
-    document.write(name+lname+age)
-}
-else{
-    var input=document.createElement('input');
-    var body=document.body;
-    input.type="text";
+// function personDetails(){
+//     var name=prompt("enter name");
+//     var lname=prompt("enter last name")
+//     var age=prompt("enter age");
+// if(age>18){
 
- document.write(name+""+body.append(input)+"<br>")
- document.write(lname+""+body.append(input))
+//     var input=document.createElement('input');
+//     var body=document.body;
+//     input.type="text";
+
+//  document.write(name+" "+ lname+" "+age+"<br>")
+//  body.append(input)
+// }
+// else{
+//     document.write(name+lname+age)
+
+
+// }
+// }
+// personDetails();
+
+//14
+
+// function moviesFunc(){
+
+//     var img=document.createElement('img');
+//     var body=document.body;
+//     body.append(img);
+//     img.setAttribute("id","img_id")
+
+
+//     var moviesArray=[];
+
+//     var movies={};
+//    movies.nameOfMovie=prompt("enter name ");
+//    movies.numOfViews=+prompt("enter views number");
+//    movies.yearOfMovie=+prompt("enter year");
+//    movies.imgMovie=prompt("enter img");
+//    moviesArray.push(movies);
+
+// document.write("name:"+movies.nameOfMovie+" "+"number of views:"+movies.numOfViews+" "+"<h1>"+"year:"+movies.yearOfMovie+"</h1>"+movies.imgMovie+"<br>")
+// }
+// moviesFunc();
+
+//15
+
+// var emploey={  
+
+// };
+
+// for(var i=0;i<5;i++){
+// var userKey=prompt("enter key");
+// var userValue=prompt("enter value");
+// emploey.userKey=userValue;
+
+// var result=emploey.userKey;
+// document.write("<p>"+result+"</p>");
+
+// }
+
+//16
+
+// function buildingFunc(){
+
+//     var buildingArray=[];
+// var userNumber=prompt("enter number please");
+// for (let i = 0;i < userNumber;i++) {
+// var building={
+//     nameOfCharg:prompt("enter name of charge"),
+//     nameofCompany:prompt("enter name of compny"),
+//     numberOfSpots:prompt("ente spots"),
+//     numberOfApartments:prompt("enter number of apartments"),
+// };
+// buildingArray.push(building);
+    
+// document.write("<p>"+building.nameOfCharg +" "+building.nameofCompany+" "+building.numberOfApartments +" "+building.numberOfSpots+" "+"</p>"+"<br>");
+// }
+
+// }
+
+// buildingFunc();
+//17
+function storeFunc(){
+var userNumber=prompt("enter number please");
+var storeArray=[];
+
+for (let i = 0; i < userNumber;i++) {
+    var store={};
+    store.storeName=prompt("enter store name");
+    store.address=prompt("enter store addres");
+    store.storeDevitions=prompt("enter store dev");
+    store.storeEmployes=+prompt("enter store employes");
+
+  
+    if(store.storeEmployes>10){
+        document.write("<div>"+store.storeName+" "+store.address+" "+store.storeDevitions+" "+storeEmployes+"</div>")
+
+    }
+
+    storeArray.push(store);
+
 
 }
+
+
+
+
 }
-personDetails('avi','aaa',70);
+
+
+
+
+storeFunc();
+
+
+
+
+
+
