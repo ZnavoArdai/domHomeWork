@@ -170,37 +170,93 @@
 
 // buildingFunc();
 //17
-function storeFunc(){
-var userNumber=prompt("enter number please");
-var storeArray=[];
+// function storeFunc(){
+// var userNumber=prompt("enter number please");
+// var storeArray=[];
 
-for (let i = 0; i < userNumber;i++) {
-    var store={};
-    store.storeName=prompt("enter store name");
-    store.address=prompt("enter store addres");
-    store.storeDevitions=prompt("enter store dev");
-    store.storeEmployes=+prompt("enter store employes");
+// for (let i = 0; i < userNumber;i++) {
+//     var store={};
+//     store.storeName=prompt("enter store name");
+//     store.address=prompt("enter store addres");
+//     store.storeDevitions=prompt("enter store dev");
+//     store.storeEmployes=+prompt("enter store employes");
 
-  
-    if(store.storeEmployes>10){
-        document.write("<div>"+store.storeName+" "+store.address+" "+store.storeDevitions+" "+storeEmployes+"</div>")
+//     if(store.storeEmployes>10){
+//         document.write("<div>"+store.storeName+" "+store.address+" "+store.storeDevitions+" "+store.storeEmployes+"</div>")
+//     }
+//     storeArray.push(store);
+// }
 
-    }
+// }
+// storeFunc();
 
-    storeArray.push(store);
+// function howManyElements(){
+// var divs=document.getElementsByTagName('div');
+// var counter=0;
+
+// for(i=0;i<divs.length;i++){
+
+//     counter++;
+// }
+   
+// console.log(counter);
+// }
+
+// howManyElements();
+
+//19
 
 
-}
+// function contactMan(){
+// var contactArray=[]; 
+// var userNumber=+prompt("enter user number"); 
+
+// for (let i = 0; i < userNumber; i++) {
+// var contact={};
+// contact.fullName=prompt("enter full anem");
+// contact.compant=prompt("enter company");
+// contact.phonNumner=prompt("enter phone number");
+// contact.emaill=prompt("enter email"); 
+
+// contactArray.push(contact);
+
+// var ul=document.getElementById("list");
+
+// ul.innerHTML+="<li>"+contact.fullName+"</li>"
+
+
+// }
+
+// }
+// contactMan();
+
+//20
+// function doctorFunc(){
+//     var doctorArray=[];
+//     var userNumber=prompt("enter number");
+//     for (let i = 0; i < userNumber; i++) {
+//         var doctor={};
+//         doctor.fullName=prompt("enter full name");
+//         doctor.staz=prompt("enter staz");
+//         doctor.phoneNumber=prompt("enter phone nuber");
+//         doctor.isAvaleble=confirm("is avaleble");
+//         doctor.email=prompt("enter e-mail");
+
+//         doctorArray.push(doctor);
+        
+//         var tbody=document.getElementById("tbodyy");
+//         tbody.innerHTML+="<tr>"+doctor.fullName+doctor.staz+doctor.phoneNumber+doctor.isAvaleble+doctor.email+"</tr>";
+//     }
+
+// };
+
+// doctorFunc();
 
 
 
 
-}
 
 
-
-
-storeFunc();
 
 
 
